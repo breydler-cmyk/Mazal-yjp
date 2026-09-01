@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — MAZAL YJP</title>
+<meta name="description" content="Upcoming MAZAL YJP events for young Jewish professionals in Philadelphia and the suburbs.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="index.html" class="mark">MAZAL <span>YJP</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:32px;">
+    <div class="wrap">
+      <p class="eyebrow">Events</p>
+      <h1>Upcoming</h1>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section>
+    <div class="wrap">
+      <div class="event">
+        <div class="date">
+          <span class="day">TBA</span>
+          <span class="rest">Date to be announced</span>
+        </div>
+        <div>
+          <h3>Matchmaking event</h3>
+          <p class="meta">Philadelphia &amp; the suburbs</p>
+          <p>An evening focused on introductions within the community — working with a matchmaker to help members connect. More details to come soon.</p>
+          <a href="contact.html" class="btn-ghost">Get details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MAZAL YJP · Philadelphia &amp; the suburbs</p>
+    <a href="https://instagram.com/mazal.yjp" target="_blank" rel="noopener">@mazal.yjp</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('nav');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+
+</body>
+</html>

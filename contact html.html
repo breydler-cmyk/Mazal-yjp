@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — MAZAL YJP</title>
+<meta name="description" content="Get in touch with MAZAL YJP — young Jewish professionals of Philadelphia and the suburbs.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="index.html" class="mark">MAZAL <span>YJP</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:32px;">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Get in touch</h1>
+      <p class="lede">Questions about an event, interested in speaking, or want to get involved — reach out.</p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section>
+    <div class="wrap contact-grid">
+      <div>
+        <div class="contact-item">
+          <p class="label">Email</p>
+          <a href="mailto:Breydler@gmail.com">Breydler@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <p class="label">Instagram</p>
+          <a href="https://instagram.com/mazal.yjp" target="_blank" rel="noopener">@mazal.yjp</a>
+        </div>
+        <div class="contact-item">
+          <p class="label">Based in</p>
+          <p>Philadelphia &amp; the suburbs</p>
+        </div>
+      </div>
+      <div>
+        <div class="contact-item">
+          <p class="label">Run by</p>
+          <p>Ben Reydler</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MAZAL YJP · Philadelphia &amp; the suburbs</p>
+    <a href="https://instagram.com/mazal.yjp" target="_blank" rel="noopener">@mazal.yjp</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('nav');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+
+</body>
+</html>

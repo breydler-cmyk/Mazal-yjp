@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — MAZAL YJP</title>
+<meta name="description" content="MAZAL YJP is run by Ben Reydler, connecting young Jewish professionals in Philadelphia and the suburbs through business-focused speaker events and networking.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="index.html" class="mark">MAZAL <span>YJP</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:32px;">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h1>A community built around business exposure.</h1>
+      <p class="lede">MAZAL YJP brings together Jews of all walks of life across Philadelphia and the suburbs — with a focus on connecting members to those already building: founders who started their own companies, and executives leading them.</p>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How it works</h2>
+      </div>
+      <div class="grid3">
+        <div>
+          <span class="num">01</span>
+          <h3>Monthly speakers</h3>
+          <p>Each month, we host a speaker from the community — someone who's started a business or leads one — for an honest conversation about how they got there.</p>
+        </div>
+        <div>
+          <span class="num">02</span>
+          <h3>Real networking</h3>
+          <p>Every event is paired with dedicated networking time, so conversations that start in the room don't end when it does.</p>
+        </div>
+        <div>
+          <span class="num">03</span>
+          <h3>Open to all</h3>
+          <p>MAZAL is for Jews of all backgrounds and stages of their career — the common thread is showing up for the community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Run by Ben Reydler</h2>
+      </div>
+      <p style="max-width:60ch; font-size:17px;">MAZAL YJP is organized and hosted by Ben Reydler, based in Philadelphia and the suburbs. Reach out any time — details on the <a href="contact.html" style="border-bottom:1px solid var(--brass);">contact page</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MAZAL YJP · Philadelphia &amp; the suburbs</p>
+    <a href="https://instagram.com/mazal.yjp" target="_blank" rel="noopener">@mazal.yjp</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('nav');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAZAL YJP — Young Jewish Professionals of Philadelphia</title>
+<meta name="description" content="MAZAL YJP connects young Jewish professionals across Philadelphia and the suburbs through monthly speaker events, networking, and community.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="index.html" class="mark">MAZAL <span>YJP</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Philadelphia &amp; the suburbs</p>
+      <h1>Where young Jewish professionals build businesses and community together.</h1>
+      <p class="lede">MAZAL YJP brings together Jews of all backgrounds through monthly speaker events and networking — connecting members with founders and executives already building in the community.</p>
+      <div class="cta-row">
+        <a href="events.html" class="btn">See upcoming event</a>
+        <a href="contact.html" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we're building</h2>
+        <p class="note">Business exposure, real relationships, and a community that shows up for each other.</p>
+      </div>
+      <div class="grid3">
+        <div>
+          <span class="num">01</span>
+          <h3>Speaker events</h3>
+          <p>Monthly evenings with founders and executives from the community, sharing how they built what they built.</p>
+        </div>
+        <div>
+          <span class="num">02</span>
+          <h3>Networking</h3>
+          <p>Every speaker event comes paired with real networking time — not just a talk and a quiet exit.</p>
+        </div>
+        <div>
+          <span class="num">03</span>
+          <h3>Community</h3>
+          <p>A space for Jews of all walks of life across Philadelphia and the suburbs to know and support one another.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MAZAL YJP · Philadelphia &amp; the suburbs</p>
+    <a href="https://instagram.com/mazal.yjp" target="_blank" rel="noopener">@mazal.yjp</a>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('nav');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+
+</body>
+</html>
